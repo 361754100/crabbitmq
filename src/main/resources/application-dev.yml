@@ -1,0 +1,16 @@
+server:
+  port: 8092
+  servlet:
+    context-path: /crabbitmq
+
+spring:
+  rabbitmq:
+    host: localhost
+    # web控制台的访问端口才是 15672
+    port: 5672
+    username: admin
+    password: 123456
+    publisher-confirms: true
+    publisher-returns: true
+    template:
+      mandatory: true
